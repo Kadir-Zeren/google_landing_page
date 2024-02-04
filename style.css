@@ -1,3 +1,4 @@
+/* google landing page */
 * {
   margin: 0;
   padding: 0;
@@ -8,11 +9,14 @@
 body {
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: gray;
+  /* background-color: burlywood; */
 }
+/* header */
+
 .header {
   padding: 20px;
   line-height: 27px;
+  /* height: 40px; */
 }
 .header__left {
   float: left;
@@ -21,7 +25,7 @@ body {
   float: right;
 }
 .header__item {
-  display: inline-block;
+  display: inline;
 }
 .header__link {
   color: black;
@@ -46,16 +50,29 @@ body {
   border-radius: 4px;
   border: none;
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 600;
 }
 .header__link--button:hover {
   background-color: blue;
 }
-/* MAİN */
+.header__link--avatar {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.header__link--avatar:hover {
+  height: 34px;
+  width: 34px;
+  background-color: #d3d3d3;
+}
+/* Main  */
+
 .main {
   margin-top: 150px;
   text-align: center;
 }
+
 .main__logo {
   height: 92px;
   width: 272px;
@@ -66,7 +83,7 @@ body {
   padding-top: 3px;
   border-radius: 25px;
   border: 1px solid #d3d3d3;
-  margin: 20px auto;
+  margin: 20px auto; /* elementi ortalamasını istediğimiz için auto veriyoruz değere. */
 }
 .main__search-bar:hover {
   box-shadow: rgb(211, 211, 211) 3px 3px 5px 0px;
@@ -74,7 +91,7 @@ body {
 .main__search-bar--magnifier {
   height: 30px;
   width: 30px;
-  vertical-align: middle;
+  vertical-align: middle; /*dikeyde hizalama*/
   cursor: pointer;
 }
 .main__search-bar--mic {
@@ -104,11 +121,47 @@ body {
 .main__buttons:hover {
   opacity: 1;
   border: 1px solid rgb(211, 211, 211);
-  box-shadow: rgb(211, 211, 211) 0.7px 0.7px 0.7px 0;
+  box-shadow: rgb(211, 211, 211) 0.7px 0.7px 0.7px 0px;
 }
 .main__language {
-  margin-top: 1.1rem;
+    margin-top: 1.1rem;
 }
-.main__language--link {
+/* .main__language a {
+    text-decoration: underline;
+} */
+.main__language--link{
+    text-decoration: underline;
+}
+
+/* footers */
+.footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #f2f2f2;
+    line-height: 40px;
+    width: 100vw;
+}
+.footer__country {
+    padding-left: 20px;
+    border-bottom: 1px solid #E4E4E4
+}
+.footer__left {
+    float: left;
+    padding-left: 15px;
+}
+.footer__right {
+    float: right;
+    padding-right: 21px;
+}
+
+.footer__item {
+  display: inline;
+}
+.footer__link {
+  color: black;
+  padding: 0.5rem;
+  opacity: 0.7;
+}
+.footer__link:hover {
   text-decoration: underline;
 }
